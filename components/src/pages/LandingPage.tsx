@@ -1,9 +1,10 @@
 import Dashboard from "../layouts/Dashboard";
+// import { GlassDiv } from "../components/GlassDiv";
 
 function LandingPage() {
     return (
         <Dashboard>
-            <h1>Hello, world!</h1>
+            
         </Dashboard>
     )
 }
