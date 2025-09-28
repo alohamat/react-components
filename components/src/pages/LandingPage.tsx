@@ -1,6 +1,10 @@
+import Dashboard from "../layouts/Dashboard";
+
 function LandingPage() {
     return (
-        <h1 className="">Hello, world!</h1>
+        <Dashboard>
+            <h1>Hello, world!</h1>
+        </Dashboard>
     )
 }
 
