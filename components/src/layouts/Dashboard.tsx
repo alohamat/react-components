@@ -1,17 +1,13 @@
-import { useNavigate } from "react-router-dom";
-import { Button } from "../components/Button";
 import type { ReactNode } from "react";
-import Home from "../assets/Home";
 
 type DashboardProps = {
   children?: ReactNode;
 };
 
 function Dashboard({ children }: DashboardProps) {
-  const navigate = useNavigate();
 
   return (
-    <main className="relative min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-black overflow-hidden flex flex-col">
+    <main className="relative min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-black overflow-hidden flex flex-col items-center justify-center px-6">
       {/* stars with random divs */}
       <div className="absolute inset-0">
         {Array.from({ length: 50 }).map((_, i) => (
@@ -26,13 +22,8 @@ function Dashboard({ children }: DashboardProps) {
           />
         ))}
       </div>
-
-      <div className="relative flex flex-1 z-10 p-6">
         {children}
-      </div>
-      <div className="self-end">
-        <Button innerContent={<Home />} click={() => navigate("/")}/>
-      </div>
+      
     </main>
   );
 }
