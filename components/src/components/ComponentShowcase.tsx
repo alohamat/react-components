@@ -1,10 +1,10 @@
-import { NavbarCode } from "./snippets/navbar";
+import { NavbarCode } from "./snippets/Navbar";
 
 export const components = [
   {
     name: "Navbar",
     description: "Guide user with a responsive and elegant navbar.",
-    route: "/navbar",
+    route: "/components/navbar",
     code: NavbarCode,
   },
   {

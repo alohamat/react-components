@@ -38,7 +38,7 @@ export const Modal = ({
         >
           {/* close button */}
           <button
-            className="absolute top-3 right-3 text-gray-400 hover:text-white text-xl"
+            className="absolute top-3 right-3 text-gray-400 hover:text-white text-xl cursor-pointer"
             onClick={onClose}
           >
             ✕
