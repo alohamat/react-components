@@ -5,13 +5,13 @@ import { components } from "../components/ComponentShowcase";
 import Dashboard from "../layouts/Dashboard";
 import Footer from "../components/Footer";
 import { Modal } from "../components/Modal";
-import { CodeBlock } from "../components/CodeBlock";
 
 type ComponentInfo = {
   name: string;
   description: string;
   route: string;
   code?: string;
+  image?: string;
   Component?: React.ComponentType;
 };
 
@@ -83,6 +83,7 @@ export default function LandingPage() {
             title={selectedComponent.name}
             description={selectedComponent.description}
             route={selectedComponent.route}
+            code={selectedComponent.code}
             onClose={() => setModalOpen(false)}
           >
             <button
@@ -91,10 +92,10 @@ export default function LandingPage() {
                 setCodeOpen(!codeOpen);
               }}
             >
-              {codeOpen ? "Hide code" : "See code"}
+              {codeOpen ? "Hide image" : "See image"}
             </button>
             {codeOpen && (
-              <CodeBlock code={selectedComponent.code!} language="jsx" />
+              <img src={selectedComponent.image} alt="Component image" />
             )}
           </Modal>
         )}

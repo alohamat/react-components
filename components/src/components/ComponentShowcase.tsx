@@ -1,11 +1,12 @@
-import { NavbarCode } from "./snippets/Navbar";
+import navbar from "../assets/navbar.png"
 
 export const components = [
   {
     name: "Navbar",
     description: "Guide user with a responsive and elegant navbar.",
     route: "/components/navbar",
-    code: NavbarCode,
+    code: "https://github.com/alohamat/react-components/blob/main/components/src/components/Navbar.tsx",
+    image: navbar
   },
   {
     name: "AuthForm",
@@ -16,6 +17,7 @@ export const components = [
     name: "Modal",
     description: "Show details without leaving the page.",
     route: "/modal",
+    code: "https://github.com/alohamat/react-components/blob/main/components/src/components/Modal.tsx",
   },
   {
     name: "Card",

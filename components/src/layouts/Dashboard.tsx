@@ -6,7 +6,7 @@ type DashboardProps = {
 
 function Dashboard({ children }: DashboardProps) {
   return (
-<main className="relative min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-black">
+<main className="relative min-h-screen bg-gradient-to-b overflow-hidden from-purple-900 via-indigo-900 to-black">
   {/*star background with random divs */}
   <div className="absolute inset-0">
     {Array.from({ length: 50 }).map((_, i) => (
